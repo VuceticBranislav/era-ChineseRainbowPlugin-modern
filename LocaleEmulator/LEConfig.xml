@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LEConfig>
+  <Profiles>
+    <Profile Name="Chinese" Guid="10000000-0000-0000-0000-000000000000" MainMenu="false">
+      <Parameter></Parameter>
+      <Location>zh-Hans</Location>
+      <Timezone>China Standard Time</Timezone>
+      <RunAsAdmin>true</RunAsAdmin>
+      <RedirectRegistry>true</RedirectRegistry>
+      <IsAdvancedRedirection>true</IsAdvancedRedirection>
+      <RunWithSuspend>false</RunWithSuspend>
+    </Profile>
+    <Profile Name="Russian" Guid="20000000-0000-0000-0000-000000000000" MainMenu="false">
+      <Parameter></Parameter>
+      <Location>ru</Location>
+      <Timezone>Russian Standard Time</Timezone>
+      <RunAsAdmin>true</RunAsAdmin>
+      <RedirectRegistry>true</RedirectRegistry>
+      <IsAdvancedRedirection>true</IsAdvancedRedirection>
+      <RunWithSuspend>false</RunWithSuspend>
+    </Profile>
+  </Profiles>
+</LEConfig>

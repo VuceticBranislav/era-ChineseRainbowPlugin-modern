@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E5C82B3F-9AA4-482C-812E-318A5919CFB6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ChineseRainbowPlugin\WogCn.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="WogCn">
+        <MSBuild Projects="ChineseRainbowPlugin\WogCn.dproj"/>
+    </Target>
+    <Target Name="WogCn:Clean">
+        <MSBuild Projects="ChineseRainbowPlugin\WogCn.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WogCn:Make">
+        <MSBuild Projects="ChineseRainbowPlugin\WogCn.dproj" Targets="Make"/>
+    </Target>    
+    <Target Name="Build">
+        <CallTarget Targets="WogCn"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="WogCn:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="WogCn:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
